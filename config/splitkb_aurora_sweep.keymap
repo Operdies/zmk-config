@@ -74,7 +74,7 @@
        compatible = "zmk,keymap";
 
        default_layer {
-        sensor-bindings = <&inc_dec_kp BKSP DEL>;
+        sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         bindings = <
         &kp Q        &kp W             &kp E           &kp R            &kp T                 &kp Y        &kp U           &kp I           &kp O           &kp P
         &kp A        &lht LALT S       &lht LCTL D     &lht LSFT F      &lht LGUI G           &rht LGUI H  &rht LSFT J     &rht LCTL K     &rht LALT L     &kp SCLN
@@ -103,7 +103,7 @@
        };
 
        tri_layer {
-        sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
+        sensor-bindings = <&inc_dec_kp BKSP DEL>;
         bindings = <
         &trans       &trans            &kp UP          &trans           &trans                &trans       &kp F7          &kp F8          &kp F9          &kp F10
         &trans       &lht LALT LEFT    &lht LCTL DOWN  &lht LSFT RIGHT  &trans                &trans       &kp F4          &kp F5          &kp F6          &kp F11
