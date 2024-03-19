@@ -47,6 +47,16 @@
         key-positions = <13 16>;
         bindings = <&caps_word>;
       };
+      combo_del {
+        timeout-ms = <50>;
+        key-positions = <6 7>;
+        bindings = <&kp DEL>;
+      };
+      combo_bksp {
+        timeout-ms = <50>;
+        key-positions = <2 3>;
+        bindings = <&kp BKSP>;
+      };
     };
 
     behaviors {
@@ -54,7 +64,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <220>;
+            tapping-term-ms = <170>;
             quick-tap-ms = <220>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMB_KEYS>;
@@ -63,7 +73,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <220>;
+            tapping-term-ms = <170>;
             quick-tap-ms = <220>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
