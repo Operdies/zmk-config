@@ -11,10 +11,10 @@ docker exec -it -w /workspaces/zmk/app "$container" $buildcmd || exit 1
 
 case "$1" in
   left)
-    [ -d "$mountdir" ] || udisksctl mount -b /dev/disk/by-id/usb-Adafruit_nRF_UF2_D704AE2ED9FCFE83-0:0 || exit 1
+    [ -d "$mountdir" ] || udisksctl mount -b /dev/disk/by-id/usb-Adafruit_nRF_UF2_63A8080A5572EF73-0:0 || exit 1
     ;;
   right) 
-    [ -d "$mountdir" ] || udisksctl mount -b /dev/disk/by-id/usb-Adafruit_nRF_UF2_63A8080A5572EF73-0:0 || exit 1
+    [ -d "$mountdir" ] || udisksctl mount -b /dev/disk/by-id/usb-Adafruit_nRF_UF2_D704AE2ED9FCFE83-0:0 || exit 1
     ;;
   *) echo Choose left or right
     exit 1
