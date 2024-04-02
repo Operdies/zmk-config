@@ -28,6 +28,10 @@
   triggers-per-rotation = <40>;
 };
 
+&caps_word {
+  continue-list = <UNDERSCORE MINUS>;
+};
+
 / {
     combos {
       compatible = "zmk,combos";
@@ -43,7 +47,7 @@
         bindings = <&kp ESC>;
       };
       combo_capsword {
-        timeout-ms = <30>;
+        timeout-ms = <50>;
         key-positions = <13 16>;
         bindings = <&caps_word>;
       };
@@ -58,7 +62,7 @@
         bindings = <&kp BKSP>;
       };
     };
-
+    
     behaviors {
         lht: left_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -105,9 +109,9 @@
        right_layer {
         sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         bindings = <
-        &trans       &trans            &trans          &trans           &trans                &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5
-        &trans       &trans            &trans          &trans           &trans                &trans       &trans          &trans          &trans          &trans
-        &trans       &trans            &trans          &trans           &trans                &trans       &trans          &trans          &trans          &trans
+        &kp RA(Z)    &trans            &trans          &trans           &trans                &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5
+        &kp RA(L)    &trans            &trans          &trans           &trans                &trans       &trans          &trans          &trans          &trans
+        &kp RA(W)    &trans            &trans          &trans           &trans                &trans       &trans          &trans          &trans          &trans
                                                        &trans           &trans                &trans       &trans
         >;
        };
