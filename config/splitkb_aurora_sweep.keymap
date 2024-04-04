@@ -109,9 +109,9 @@
        right_layer {
         sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         bindings = <
-        &kp RA(Z)    &trans            &trans          &trans           &trans                &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5
+        &kp RA(W)    &trans            &trans          &trans           &trans                &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5
         &kp RA(L)    &trans            &trans          &trans           &trans                &trans       &trans          &trans          &trans          &trans
-        &kp RA(W)    &trans            &trans          &trans           &trans                &trans       &trans          &trans          &trans          &trans
+        &kp RA(Z)    &trans            &trans          &trans           &trans                &trans       &trans          &trans          &trans          &trans
                                                        &trans           &trans                &trans       &trans
         >;
        };
