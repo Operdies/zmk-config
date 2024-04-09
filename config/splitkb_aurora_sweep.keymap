@@ -87,7 +87,7 @@
         lhit: left_positional_interrupt_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-unless-interrupted";
             tapping-term-ms = <170>;
             quick-tap-ms = <220>;
             bindings = <&kp>, <&kp>;
