@@ -71,6 +71,7 @@
             tapping-term-ms = <170>;
             quick-tap-ms = <220>;
             bindings = <&kp>, <&kp>;
+            require-prior-idle-ms = <125>;
             hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMB_KEYS>;
         };
         rht: right_positional_hold_tap {
@@ -80,6 +81,7 @@
             tapping-term-ms = <170>;
             quick-tap-ms = <220>;
             bindings = <&kp>, <&kp>;
+            require-prior-idle-ms = <125>;
             hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
         };
 
@@ -87,7 +89,7 @@
         lhit: left_positional_interrupt_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "hold-preferred";
             tapping-term-ms = <170>;
             quick-tap-ms = <220>;
             bindings = <&kp>, <&kp>;
@@ -96,7 +98,7 @@
         rhit: right_positional_interrupt_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "hold-preferred";
             tapping-term-ms = <170>;
             quick-tap-ms = <220>;
             bindings = <&kp>, <&kp>;
