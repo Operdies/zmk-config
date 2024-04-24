@@ -71,7 +71,7 @@
             tapping-term-ms = <170>;
             quick-tap-ms = <220>;
             bindings = <&kp>, <&kp>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <60>;
             hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMB_KEYS>;
         };
         rht: right_positional_hold_tap {
@@ -81,7 +81,7 @@
             tapping-term-ms = <170>;
             quick-tap-ms = <220>;
             bindings = <&kp>, <&kp>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <60>;
             hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
         };
         lsf: left_shift {
