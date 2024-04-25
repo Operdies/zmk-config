@@ -18,6 +18,9 @@
        25 26 27 28 29
 #define THUMB_KEYS 31 32 33 34
 
+#define QUICKTAP 170
+#define TAPPINGTERM 170
+
 &lt {
   flavor = "balanced";
   tapping_term_ms = <180>;
@@ -68,8 +71,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <150>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <TAPPINGTERM>;
+            quick-tap-ms = <QUICKTAP>;
             bindings = <&kp>, <&kp>;
             require-prior-idle-ms = <60>;
             hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMB_KEYS>;
@@ -78,8 +81,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <150>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <TAPPINGTERM>;
+            quick-tap-ms = <QUICKTAP>;
             bindings = <&kp>, <&kp>;
             require-prior-idle-ms = <60>;
             hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
@@ -88,8 +91,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <150>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <TAPPINGTERM>;
+            quick-tap-ms = <QUICKTAP>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMB_KEYS>;
         };
@@ -97,8 +100,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <150>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <TAPPINGTERM>;
+            quick-tap-ms = <QUICKTAP>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
         };
